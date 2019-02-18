@@ -1,0 +1,204 @@
+body {
+    background-color: rgb(59, 113, 129);
+}
+
+#GameName {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+}
+
+#TargetScore {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(58, 137, 143);
+    width: 360px;
+    height: 360px;
+    margin: 10px;
+    float: left;
+    position: static;
+    z-index: 1;
+}
+
+#TargetScoreNumber {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250px;
+    color: white;
+    text-align: center;
+    padding: auto;
+    width: 360px;
+    height: 260px;
+    margin: auto;
+    float: left;
+    position: relative;
+    top: 40px;
+    z-index: 2;
+}
+
+#PlayerScore {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(58, 137, 143);
+    width: 360px;
+    height: 360px;
+    margin: 10px;
+    float: left;
+    position: static;
+    z-index: 1;
+}
+
+#PlayerScoreNumber {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250px;
+    color: white;
+    text-align: center;
+    padding: auto;
+    width: 360px;
+    height: 260px;
+    margin: auto;
+    float: left;
+    position: relative;
+    top: 40px;
+    z-index: 2;
+}
+
+#GamepieceClick1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(230, 177, 98);
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(230, 177, 98);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+
+#GamepieceClick2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(92, 148, 18);
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(92, 148, 18);
+    width: 150px;
+    height: 150px;
+    margin: 10px;    
+    float: left;
+    position: relative;
+}
+
+#GamepieceClick3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(243, 86, 24);
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(243, 86, 24);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    /*clear: left;*/
+    float: left;
+    position: relative;
+}
+
+#GamepieceClick4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(31, 21, 173);
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(31, 21, 173);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+
+#GamesWon {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(58, 137, 143);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+#GamesWonNumber {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    padding: auto;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    float: left;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+}
+
+#GamesLost {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(58, 137, 143);
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+#GamesLostNumber {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+    padding: auto;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    float: left;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+}
+
+#GameInstructions {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+    line-height: 32px;
+    padding: 20px;
+    background-color: rgb(58, 137, 143);
+    width: 780px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
