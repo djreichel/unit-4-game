@@ -3,39 +3,38 @@
 
 <head>
 <title> Match the tally game</title>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Bootstrap CSS-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<!--the bootstrap link below changed the layout in an unpleasant way-->
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+<script src="https://code.jquery.com/jquery.js"></script>
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row"><!--opens row 1-->
-        <div class="col-sm-2"></div><!--this div is for spacing only-->
+        <!--<div class="col-sm-2"></div>--><!--this div is for left spacing only-->
+            <div class="col-sm-12"><!--opens div col-sm-8-1-->
 
-        <div class="col-sm-8"><!--opens div col-sm-8-1-->
                 <div class="row"><!--opens row for game Name-->
                     <div class="col-sm-12"><!--opens col for game Name-->
 <!--Game name goes here--><div id="gameName">T A L L Y &nbsp;&nbsp; H O !</div>
                     </div><!--closes col for game Name-->
                 </div><!--closes row for game Name-->
+
 <!--contents goes below here-->
                 <div class="row"><!--opens row 2-->
                     <div class="col-sm-8"><!--opens div col-sm-8-2-->
                         <div class="row"><!--opens row 3L-->
                             <div class="col-sm-6"><!--opens div col-sm-6-1-->
-<!--Target score goes here-->   <div id="targetScore">TARGET SCORE<div id="targetScoreNumber"></div></div>
+<!--Target score goes here--><div id="targetScore">TARGET SCORE<div id="targetScoreNumber"></div></div>
                             </div><!--closes div col-sm-6-1-->
 
                             <div class="col-sm-6"><!--opens div col-sm-6-2L-->
-<!--Player score goes here-->   <div id="playerScore">PLAYER SCORE<div id="playerScoreNumber"></div></div>
+<!--Player score goes here--><div id="playerScore">PLAYER SCORE<div id="playerScoreNumber"></div></div>
                             </div><!--closes div col-sm-6-2L-->
                         </div><!--closes row 3L-->
                     </div><!--close div col-sm-8-2-->
@@ -43,20 +42,22 @@
                     <div class="col-sm-4"><!--opens div col-sm-8-2-->
                         <div class="row"><!--opens row 3R-->
                             <div class="col-sm-6"><!--opens div col-sm-6-2R left-->
-<!--Gamepiece1 goes here-->     <div id="gamepieceClick1"><!--CLICK TO SCORE 1--></div>
+<!--Gamepiece1 goes here--><div id="gamepieceClick1"></div>
                             </div><!--closes div col-sm-6-2R left-->
                             <div class="col-sm-6"><!--opens div col-sm-6-2R right-->
-<!--Gamepiece2 goes here-->     <div id="gamepieceClick2"><!--CLICK TO SCORE 2--></div>
+<!--Gamepiece2 goes here--><div id="gamepieceClick2"></div>
                             </div><!--closes div col-sm-6-2R right-->
+
                         </div><!--closes row 3R-->
 
                         <div class="row"><!--opens row 4R-->
                             <div class="col-sm-6"><!--opens div col-sm-6-3R left-->
-<!--Gamepiece3 goes here-->     <div id="gamepieceClick3"><!--CLICK TO SCORE 3--></div>
+<!--Gamepiece3 goes here--><div id="gamepieceClick3"></div>
                             </div><!--closes div col-sm-6-3R left-->
                             <div class="col-sm-6"><!--opens div col-sm-6-3R right-->
-<!--Gamepiece4 goes here-->     <div id="gamepieceClick4"><!--CLICK TO SCORE 4--></div>
+<!--Gamepiece4 goes here--><div id="gamepieceClick4"></div>
                             </div><!--closes div col-sm-6-3R right-->
+
                         </div><!--closes row 4R-->
                     </div><!--close div col-sm-8-2-->
                 </div><!--closes row 2-->
@@ -65,34 +66,31 @@
                     <div class="col-sm-4"><!--opens lower left col-sm-4-->
                         <div class="row"><!--opens row 6L-->
                             <div class="col-sm-6">
-<!--Games won goes here-->      <div id="gamesWon">GAMES WON<div id="gamesWonNumber"></div></div>
+<!--Games won goes here--><div id="gamesWon">GAMES WON<div id="gamesWonNumber"></div>
                             </div>
                             <div class="col-sm-6">
-<!--Games lost goes here-->     <div id="gamesLost">GAMES LOST<div id="gamesLostNumber"></div></div>                               
+<!--Games lost goes here--><div id="gamesLost">GAMES LOST<div id="gamesLostNumber"></div></div>                               
                             </div>
                         </div><!--closes row 6L-->
                     </div><!--closes lower left col-sm-4-->
-
                     <div class="col-sm-8"><!--opens lower right col-sm-8-->
                         <div class="row"><!--opens row 6R-->
                             <div class="col-sm-12">
-<!--Game instructions go here--><div id="gameInstructions">Your goal to win the game is for your player score to match the target score. <br>You score points by clicking the colorful gamepieces. <br><strong>TIP:</strong> Pay attention to the score as it relates to the gamepiece you clicked.</div>
+<!--Game instructions go here--><div id="gameInstructions"><strong>H O W &nbsp;&nbsp; T O &nbsp;&nbsp; W I N ! </strong><br>Your goal to win the game is for your score to match the target score. <br>You score points by clicking the colorful gamepieces. <br><strong>T I P :</strong> Pay attention to the score as it relates to the gamepiece you clicked.</div>
                             </div>
                         </div><!--closes row 6R-->
                     </div><!--closes lower right col-sm-8-->
                 </div><!--closes row 5-->
-            </div><!--close div col-sm-8-1-->
 
-        <div class="col-sm-2"></div><!--this div is for spacing only-->
+            </div><!--close div col-sm-8-1-->
+        <!--<div class="col-sm-2"></div>--><!--this div is for right spacing only-->
     </div><!--close row 1-->       
 </div><!--close container-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
 <script type="text/javascript" src="assets/javascript/game.js"></script>
-
 </body>
 
 </html>
