@@ -21,6 +21,7 @@ body {
     width: 360px;
     height: 360px;
     margin: 10px;
+    border-radius: 25px;
     float: left;
     position: static;
     z-index: 1;
@@ -51,6 +52,7 @@ body {
     width: 360px;
     height: 360px;
     margin: 10px;
+    border-radius: 25px;
     float: left;
     position: static;
     z-index: 1;
@@ -146,6 +148,7 @@ body {
     width: 150px;
     height: 150px;
     margin: 10px;
+    border-radius: 25px;
     float: left;
     position: relative;
     z-index: 1;
@@ -176,6 +179,7 @@ body {
     width: 150px;
     height: 150px;
     margin: 10px;
+    border-radius: 25px;
     float: left;
     position: relative;
     z-index: 1;
@@ -200,13 +204,14 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 24px;
     color: white;
-    text-align: left;
+    text-align: center;
     line-height: 32px;
     padding: 20px;
     background-color: rgb(58, 137, 143);
     width: 780px;
     height: 150px;
     margin: 10px;
+    border-radius: 25px;
     float: left;
     position: relative;
 }
