@@ -200,12 +200,11 @@ body {
     z-index: 2;
 }
 
-#gameInstructions {
+#howToWin {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
-    color: white;
+    font-size: 18px;
+    color: rgb(150, 226, 231);
     text-align: center;
-    line-height: 32px;
     padding: 20px;
     background-color: rgb(58, 137, 143);
     width: 780px;
@@ -214,4 +213,21 @@ body {
     border-radius: 25px;
     float: left;
     position: relative;
+    z-index: 1;
+}
+#gameInstructions {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    padding: 20px;
+    width: 780px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 25px;
+    float: left;
+    position: relative;
+    top: -10px;
+    z-index: 2;
 }
