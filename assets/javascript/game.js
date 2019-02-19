@@ -18,7 +18,7 @@ var gamePiece4 = 0;
 var wins = 0;
 var losses = 0;
 
-// Update the variable score values with random values 
+// This function updates the variable score values with random values  and sets Player Score to zero. 
 function newGame() {
     targetScore = Math.floor(Math.random() * 102) + 19; 
     playerScore = 0;
@@ -31,6 +31,7 @@ function newGame() {
     console.log("Wins: " + wins);
     
     $("#gamesLostNumber").html(losses);
+    console.log("Losses: " + losses);
     
     $("#targetScoreNumber").html(targetScore);
     console.log("targetScore: " + targetScore);
@@ -42,7 +43,7 @@ function newGame() {
     console.log("gamePieceClick4 value: " + gamePiece4);
 }
 
-//This function playerScore and determines winning and losing.
+//This function determines winning and losing.
 function gamePlay(gamePieceScore)    {
         
         playerScore += gamePieceScore;
@@ -62,29 +63,28 @@ function gamePlay(gamePieceScore)    {
         }
     }
 
-    console.log("start new game before scoring begins");
     newGame();
 
-    //This function scores points every time gamepieceClick1 is clicked.
+    //This function scores points every time Game Piece 1 is clicked.
     $("#gamepieceClick1").click(function()  {
-        console.log("gamepieceClick1 was clicked.");
+        console.log("Game Piece 1 was clicked.");
         gamePlay(gamePiece1);
     });
 
-    //This function scores points every time gamepieceClick2 is clicked.
+    //This function scores points every time Game Piece 2 is clicked.
     $("#gamepieceClick2").click(function()  {
-        console.log("gamepieceClick2 was clicked.");
+        console.log("Game Piece 2 was clicked.");
         gamePlay(gamePiece2);
     });
 
-    //This function scores points every time gamepieceClick3 is clicked.
+    //This function scores points every time Game Piece 3 is clicked.
     $("#gamepieceClick3").click(function()  {    
-        console.log("gamepieceClick3 was clicked.");
+        console.log("Game Piece 3 was clicked.");
         gamePlay(gamePiece3);
     });
 
-    //This function scores points every time gamepieceClick4 is clicked.
+    //This function scores points every time Game Piece 4 is clicked.
     $("#gamepieceClick4").click(function()  {    
-        console.log("gamepieceClick4 was clicked.");
+        console.log("Game Piece 4 was clicked.");
         gamePlay(gamePiece4);
     });
