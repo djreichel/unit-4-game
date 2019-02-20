@@ -14,77 +14,54 @@
 
 <body>
 
-<div class="container-fluid">
-    <div class="row"><!--opens row 1-->
-        <div class="col-sm-2"></div><!--this div is for left spacing only-->
-            <div class="col-sm-8"><!--opens div col-sm-8-1-->
+<div class="container">
 
-                <div class="row"><!--opens row for game Name-->
-                    <div class="col-sm-12"><!--opens col for game Name-->
-<!--Game name goes here--><div id="gameName">T A L L Y &nbsp;&nbsp; H O !</div>
-                    </div><!--closes col for game Name-->
-                </div><!--closes row for game Name-->
+    <div class="row" id="rowCenter"><!--opens row 1-->
+        <div class="col-sm-12">
+                <div id="gameName">T A L L Y &nbsp;&nbsp; H O !</div>
+        </div>
+    </div><!--closes row 1-->
 
-<!--contents goes below here-->
-                <div class="row"><!--opens row 2-->
-                    <div class="col-sm-8"><!--opens div col-sm-8-2-->
-                        <div class="row"><!--opens row 3L-->
-                            <div class="col-sm-6"><!--opens div col-sm-6-1-->
-<!--Target score goes here-->   <div id="targetScore">TARGET SCORE<div id="targetScoreNumber"></div></div>
-                            </div><!--closes div col-sm-6-1-->
+<!--game board goes below here-->
 
-                            <div class="col-sm-6"><!--opens div col-sm-6-2L-->
-<!--Player score goes here-->   <div id="playerScore">PLAYER SCORE<div id="playerScoreNumber"></div></div>
-                            </div><!--closes div col-sm-6-2L-->
-                        </div><!--closes row 3L-->
-                    </div><!--close div col-sm-8-2-->
+    <div class="row"><!--opens row 2-->
+        <div class="col-sm-4">
+                <div id="targetScore">TARGET SCORE<div id="targetScoreNumber"></div></div>
+        </div>
+        <div class="col-sm-4">
+                <div id="playerScore">PLAYER SCORE<div id="playerScoreNumber"></div></div>
+        </div>
 
-                    <div class="col-sm-4"><!--opens div col-sm-4-2-->
-                        <div class="row"><!--opens row 3R-->
-                            <div class="col-sm-6"><!--opens div col-sm-6-2R left-->
-<!--Gamepiece1 goes here-->     <div id="gamepieceClick1"></div>
-                            </div><!--closes div col-sm-6-2R left-->
-                            <div class="col-sm-6"><!--opens div col-sm-6-2R right-->
-<!--Gamepiece2 goes here-->     <div id="gamepieceClick2"></div>
-                            </div><!--closes div col-sm-6-2R right-->
-                        </div><!--closes row 3R-->
+        <div class="col-sm-2">
+                <div id="gamepieceClick1"></div><div id="gamepieceClick3"></div>
+        </div>
 
-                        <div class="row"><!--opens row 4R-->
-                            <div class="col-sm-6"><!--opens div col-sm-6-3R left-->
-<!--Gamepiece3 goes here-->     <div id="gamepieceClick3"></div>
-                            </div><!--closes div col-sm-6-3R left-->
-                            <div class="col-sm-6"><!--opens div col-sm-6-3R right-->
-<!--Gamepiece4 goes here-->     <div id="gamepieceClick4"></div>
-                            </div><!--closes div col-sm-6-3R right-->
-                        </div><!--closes row 4R-->
-                    </div><!--close div col-sm-4-2-->
-                </div><!--closes row 2-->
+        <div class="col-sm-2">
+                <div id="gamepieceClick2"></div><div id="gamepieceClick4"></div>
+        </div>
 
-                <div class="row"><!--opens row 5-->
-                    <div class="col-sm-4"><!--opens lower left col-sm-4-->
-                        <div class="row"><!--opens row 6L-->
-                            <div class="col-sm-6">
-<!--Games won goes here-->      <div id="gamesWon">GAMES WON<div id="gamesWonNumber"></div>
-                            </div>
-                            <div class="col-sm-6">
-<!--Games lost goes here-->     <div id="gamesLost">GAMES LOST<div id="gamesLostNumber"></div></div>                               
-                            </div>
-                        </div><!--closes row 6L-->
-                    </div><!--closes lower left col-sm-4-->
-                    <div class="col-sm-8"><!--opens lower right col-sm-8-->
-                        <div class="row"><!--opens row 6R-->
-                            <div class="col-sm-12">
-<!--Game instructions go here--><div id="howToWin">HOW TO WIN<div id="gameInstructions">Your goal to win the game is for your score to match the target score. <br>You score points by clicking the colorful gamepieces. <br><strong>TIP:</strong> Pay attention to the score as it relates to the gamepiece you clicked.</div></div>
-                            </div>
-                        </div><!--closes row 6R-->
-                    </div><!--closes lower right col-sm-8-->
-                </div><!--closes row 5-->
+        <!--<div class="col-sm-2">
+                <div id="gamepieceClick3"></div>
+        </div>-->
 
-            </div><!--close div col-sm-8-1-->
-        <div class="col-sm-2"></div><!--this div is for right spacing only-->
-    </div><!--close row 1-->       
+        <!--<div class="col-sm-2">
+                <div id="gamepieceClick4"></div>
+        </div>-->
+    </div><!--closes row 2-->
+
+    <div class="row"><!--opens row 3-->
+        <div class="col-sm-2">
+                <div id="gamesWon">GAMES WON<div id="gamesWonNumber"></div>
+        </div>
+        <div class="col-sm-2">
+                <div id="gamesLost">GAMES LOST<div id="gamesLostNumber"></div></div>                               
+        </div>
+                    
+        <div class="col-sm-8">
+                <div id="howToWin">HOW TO WIN<div id="gameInstructions">Your goal to win the game is for your score to match the target score. <br>You score points by clicking the colorful gamepieces. <br><strong>TIP:</strong> Pay attention to the score as it relates to the gamepiece you clicked.</div></div>
+        </div>
+    </div><!--close row 3-->  
 </div><!--close container-->
-</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
