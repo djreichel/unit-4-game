@@ -3,7 +3,8 @@ body {
 }
 
 #gameName {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Pacifico', cursive;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     font-size: 60px;
     font-weight: bold;
     color: white;
@@ -222,12 +223,10 @@ body {
     text-align: center;
     line-height: 32px;
     padding: 20px;
-    width: 780px;
+    width: 78                               0px;
     height: 150px;
-    margin: 10px;
     border-radius: 25px;
-    float: left;
-    position: relative;
-    top: -10px;
+    /*float: left;*/
+    position: absolute;
     z-index: 2;
 }
